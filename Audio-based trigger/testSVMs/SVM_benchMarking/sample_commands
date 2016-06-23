@@ -1,0 +1,1 @@
+benchMarkingMFCC('withnorm','/home/jayraj/octaveScripts/testSVM/SVM_benchMarking/models/withlarge_data/withnorm/Normmodel15_-14.mat','/home/jayraj/octaveScripts/testSVM/SVM_benchMarking/wavfiles/recordedTestFileAssembled_distance_34cm.wav')

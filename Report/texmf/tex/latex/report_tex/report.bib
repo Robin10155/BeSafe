@@ -1,0 +1,179 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@InProceedings{Aseﬁ2011,
+  Title                    = {AUDIO SCENE ANALYSIS USING PARAMETRIC SIGNAL FEATURES},
+  Author                   = {Hamid Aseﬁ and Behnaz Ghoraani and Andy Ye and Sridhar Krishnan},
+  Year                     = {2011},
+  Publisher                = {IEEE},
+
+  Abstract                 = {sifying the phonocardiogram, electrocardiogram, electrocor-
+},
+  File                     = {:/home/jayraj/octaveScripts/IEEE/Done/AUDIO SCENE ANALYSIS USING PARAMETRIC SIGNAL FEATURES.pdf:PDF},
+  Review                   = {AUDIO SCENE ANALYSIS USING PARAMETRIC SIGNAL FEATURES
+
+Hamid Aseﬁ, Behnaz Ghoraani, Andy Ye, and Sridhar Krishnan
+
+Department of Electrical and Computer Engineering,
+350 Victoria Street, Ryerson University, Toronto, ON M5B 2K3, CANADA.
+
+ABSTRACT sifying the phonocardiogram, electrocardiogram, electrocor-
+
+The bj i f hi ticogram, and vibroarthrogram signals, and are proposed foro ect ve o t s paper is to propose pole modeling-based
+features for dio las iﬁca io i d audio scene analysis as described in this paper. In this pa-au c s t n n or er to achieve a high
+clas per, we propose this feature for audio classiﬁcation, and in-siﬁcation performance. This paper investigates the suit-
+able pole modeling comput i hod d l h vestigate the performance and speed of the proposed methodat on met an eva uates t e
+propos d di f i di d bas i h 40 human against two well-known features: AR, and MFCC features.e au o eatures n an au o ata e w t
+speech ples d 40 hum dio ignals including This paper is continued as follows: In Section 2, the theo-sam , an non an au s
+
+rithical background of the pole and AR modeling, and MFCC
+aircraft, helicopter, drum, ﬂutes, and piano sounds. An ac-
+
+y f 85% i hei d is explained. Next, the suitable method to compute the polecurac rate o s ac ve using the pole modeling fea-
+d li di i i lysis (LDA). W ls features is explained in Section 3. Section 4 evaluates thetures an near scr m nant ana e a o com-
+
+pare proposed feature for Human/Non-human audio classiﬁcation,the performance of the pole modeling features with two
+well-kno di f and compares its performance with respect to AR and MFCCwn au o eatures: Autoregressive (AR), and Mel-
+frequency C ps l fﬁ i features. Finally, Section 5 concludes this paper.e tra coe c ents (MFCCs). We found that pole
+modeling is an appropriate tool for real-time audio scene anal-
+ysis 2. FEATURE ANALYSIS METHODS.
+
+Index Terms— Audio Classiﬁcation, Feature Extraction, 2.1. AR Modeling
+Pole modeling, AR modeling, and MFCC
+
+The AR modeling uses Burg lattice method [2] to model a
+stationary audio segment into AR coefﬁcients ak as shown in1. INTRODUCTION the following transfer function:
+
+Audio feature extraction and classiﬁcation are important tools Y (z) 1
+for audio scene analysis. However, due to the non-stationarities H(z) = = ∑ (1)X(z) m1 + akz−k
+and discontinuities exist in these signals, their quantiﬁcatio k=1n
+and classiﬁcation remains a formidable challenge. The gen- where m is the model order.
+eral methodology of audio classiﬁcation involves extracting
+discriminatory features from the audio data and feeding them 2.2. Pole Modeling
+into a pattern classiﬁer. The better and more effective features
+are extracted from audio signals the higher performance will Pole parameters are calculated from a standard autoregres-,
+be achieved in the audio classiﬁcation technique. Over the last sive model followed by a root ﬁnding method to calculate the
+few years, several audio feature extraction techniques have poles of the AR transfer function [1]. Without losing general-
+been introduced; such as linear prediction coefﬁcient (LPC) ity, it can be considered am = 1, and the dominator of Eqn.1,
+line spectral frequencies (LSFs), and AR modeling [1] which can be written as polynomial:
+are parametric, and signal energy, pitch, zero crossing rate, 1 2 3 m
+and MFCC which are nonparamet i P (z) = a0 + a1z + a2z + a3z + ... + z (2)r c.
+
+In this paper, we propose pole modeling-based features Pole parameters in Eqn.1 can be posed as a root ﬁnding prob-
+as a parametric approach for audio classiﬁcation. The supe- lem for Eqn. 2. Next section explains the root ﬁnding method
+rior performance of poles in tracking the frequency or spec- used in this paper.
+tral behavior of a signal makes them an appropriate choice for
+parametric representation of audio signals. The poles should
+also assist in associating the features with physi l harac- 2.3. MFCCca c
+teristics of the audio source. Pole modeling obtained from MFCC is based on the Mel frequency scale which approx-
+AR model of signals have given promising results [1] in clas- imates the non-linear way that humans perceive sounds [3].
+
+
+
+
+
+
+
+
+
+
+
+IEEE CCECE 2011 - 000922
+
+}
+}
+
+@InProceedings{BEGAULT,
+  Title                    = {FORENSIC ANALYSIS OF THE AUDIBILITY OF FEMALE SCREAMS},
+  Author                   = {DURAND R. BEGAULT},
+
+  File                     = {:/home/jayraj/octaveScripts/IEEE/Done/FORENSIC ANALYSIS OF THE AUDIBILITY OF FEMALE SCREAMS.pdf:PDF},
+  Review                   = {FORENSIC ANALYSIS OF THE AUDIBILITY OF FEMALE SCREAMS 
+
+DURAND R. BEGAULT1 
+
+1Audio Forensic Center, Charles M. Salter Associates, San Francisco, CA, USA 
+Durand.Begault@cmsalter.com 
+
+Acoustical engineers and forensic acoustical experts are sometimes called upon to render opinions on the audibility of 
+specific sounds at a given distance. Such sounds include speech, gunfire, warning signals such as fire alarms or 
+locomotive horns, and in certain cases, human screaming. The audibility of female screaming has been questioned in 
+several cases, where the expert can use both analytical and demonstrative techniques in order to form an opinion. The 
+determination of audibility may be refined in terms of detection, discrimination and identification. This paper addresses 
+measurement and typical levels of female screams, and reports on two different audibility analyses. 
+
+INTRODUCTION 1 “HOW LOUD IS A SCREAM” 
+Voice projection typically refers to a wilful emphasis In acoustics, it is not unusual for someone from outside 
+of the speaking or singing voice to allow audibility at a the field (e.g., an attorney) to question an expert about 
+great distance. It also refers to those techniques how loud a particular sound source is, including 
+employed in public speaking to demand respect and screams. For instance, a world records book reportedly 
+attention, such as when a teacher is talking to the class, indicates 126.2 dB as the loudest scream. After 
+or simply to be heard clearly, as by actors in a theatre. explaining the differences between loudness and sound 
+Human screaming, particularly that which is effective in pressure level, an expert must then attempt to explain 
+its role to alert others to a situation of calamity, shares the statistical variation and influence of the 
+characteristics with effective voice projection in experimental design with respect to the measurement of 
+singing. Voice projection is enhanced via air flowing a human-generated sound. One must also account for 
+from the expansion of the diaphragm, instead of air the means by which the level is measured, and for the 
+from the top of the lungs. Vocal resonance can be used specific frequency weighting and time averaging 
+to effect an increase in amplitude via the use of the employed, since this can influence the outcome of any 
+head voice by making use of the upper sinus cavities. measurement [4]. Finally, care must be made for 
+ preventing distortion in the capture of these high-level 
+Acoustically, the scream is part of the vocal repertoire signals. 
+of many animals, and is differentiated between and even 
+within one species. The exact acoustical mechanisms Sound level measurements and recordings were made of 
+vary and can be quite complex, including the effect of female screaming at our parent firm Charles M. Salter 
+large scale temporal patterns, turbulence and nonlinear Associates on two occasions. Calibrated Type 1 
+acoustic effects, and complex spectral patterns including acoustical measurements were made in a sound-
+harmonic and inharmonic components (see for instance deadened room. Two sets of measurements from ten 
+[1]). But for the acoustical engineer, the primary interest female subjects ranging in age from mid 20s to mid 40s 
+is in the over-all sound pressure level and its consequent were obtained. Each subject screamed three times, with 
+implications for audibility. instructions to scream as loudly as possible, as if you 
+ had just been surprised by something very scary; the 
+Sometimes the question of audibility of a screams data for the scream with the highest level was retained. 
+sound pressure level relates to community disturbance The distance from the mouth of the subject to the 
+and noise abatement; for example, reference [2] microphone was 36 in. 
+investigates pass-by spectra of screams from multiple 
+persons on a moving roller coaster. In forensic In rank order, the data can be summarized for each 
+situations, the audibility of a scream is typically made participant in order from most to least intense: 123, 122, 
+with reference to the acoustics of sound production; 122, 118, 115, 110, 109, 109, 108 and 102 decibels. The 
+sound propagation; and the psychoacoustics of a average level is 113.8 dB and the standard deviation is 
+receiver who may have been a potential witness to a 7.3 dB. The values reported are the maximum A-
+crime [3]. In this paper, I will present data pertinent to weighted level using a fast (.125 ms) time integration 
+each of these issues. (LAF-MAX) to correspond to human perception. 
+
+}
+}
+
+@InProceedings{Normal2598,
+  Title                    = {See	discussions,	stats,	and	author	profiles	for	this	publication	at:	https://www.researchgate.net/publication},
+  Author                   = {Normal	and	Abnormal	Non-Speech	Audio  and Event	Detection	Using	MFCC	and	PR-Based  and Feature	Sets  and ARTICLE		in		ADVANCED	MATERIALS	RESEARCH	·	JANUARY	2013  and DOI:	10.4028/www.scientific.net/AMR.601.200 },
+  Year                     = {2598},
+
+  Doi                      = {	10.4028/www.scientific.net/AMR.601.200},
+  File                     = {:/home/jayraj/octaveScripts/IEEE/Done/scream_detection.pdf:PDF},
+  Review                   = {See	discussions,	stats,	and	author	profiles	for	this	publication	at:	https://www.researchgate.net/publication/259823736
+
+Normal	and	Abnormal	Non-Speech	Audio
+Event	Detection	Using	MFCC	and	PR-Based
+Feature	Sets
+ARTICLE		in		ADVANCED	MATERIALS	RESEARCH	·	JANUARY	2013
+DOI:	10.4028/www.scientific.net/AMR.601.200
+
+READS
+38
+
+3	AUTHORS,	INCLUDING:
+
+Buket	D.	Barkana Burak	Uzkent
+University	of	Bridgeport Rochester	Institute	of	Technology
+69	PUBLICATIONS			114	CITATIONS			 15	PUBLICATIONS			45	CITATIONS			
+
+SEE	PROFILE SEE	PROFILE
+
+All	in-text	references	underlined	in	blue	are	linked	to	publications	on	ResearchGate, Available	from:	Buket	D.	Barkana
+letting	you	access	and	read	them	immediately. Retrieved	on:	22	March	2016
+
+}
+}
+

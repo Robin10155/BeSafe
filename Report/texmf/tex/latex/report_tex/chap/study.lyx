@@ -1,0 +1,260 @@
+#LyX 1.6.10 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass desethesis
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Study
+\end_layout
+
+\begin_layout Standard
+The major activity in this chapter is literature survey, investigation and
+ arriving at the targetted scope and specifications.
+ Here the 'what', 'why' and 'how' of the product and product sub-parts are
+ studied.
+ One looks for similars in already existing products and makes comparisons.
+ One identifies potential decisions that need to be taken with respect to
+ the product evolution and performs a comparative statement of possible
+ options that will affect design decisions.
+ 
+\end_layout
+
+\begin_layout Standard
+NOTE: While discussing the various options and the comparisions, you need
+ to cite appropriate references at appropriate places in the text.
+ A typical 
+\emph on
+citation
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "paynter1961aad,umarikar2005msm"
+
+\end_inset
+
+ is referred as shown here.
+ The cited references will automatically be reflected in the bibliography
+ section in the order of occurence of citation in the manuscript.
+ A sample 
+\emph on
+report.bib
+\emph default
+ file is included in this template.
+ Kindly go through it and make your bibliography file accordingly.
+ A free software like 
+\emph on
+JABREF
+\emph default
+ (a java application) or 
+\emph on
+ZOTERO
+\emph default
+ (a firefox addon) can be used to create your bibliography file.
+\end_layout
+
+\begin_layout Section
+Functional concept
+\end_layout
+
+\begin_layout Standard
+This should include 
+\end_layout
+
+\begin_layout Itemize
+a discussion on the product with the aid of block diagrams and figures
+\end_layout
+
+\begin_layout Itemize
+an exhaustive list of stimuli to product
+\end_layout
+
+\begin_layout Itemize
+classification of the stimuli as input/output, power signal/information
+ signal, electric/mechanical etc.
+\end_layout
+
+\begin_layout Itemize
+First level quantification of the stimuli like, voltage levels, type of
+ signals (dc, ac, pulsed), rise time, current levels, etc.
+\end_layout
+
+\begin_layout Section
+Module study
+\end_layout
+
+\begin_layout Standard
+Partition the entire system into modules.
+\end_layout
+
+\begin_layout Subsection
+Modules
+\end_layout
+
+\begin_layout Standard
+For each of the modules, include
+\end_layout
+
+\begin_layout Itemize
+an exhaustive list of stimuli to the module
+\end_layout
+
+\begin_layout Itemize
+classification of the stimuli as input/output, power signal/information
+ signal, electric/mechanical etc.
+\end_layout
+
+\begin_layout Itemize
+First level quantification of the stimuli like, voltage levels, type of
+ signals (dc, ac, pulsed), rise time, current levels, etc.
+\end_layout
+
+\begin_layout Subsection
+Sub-modules
+\end_layout
+
+\begin_layout Standard
+If necessary, partition the various modules into sub-modules and so on till
+ the component level.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+NOTE
+\emph default
+: At every module, sub-module or component level (electric hardware or algorithm
+s or industrial design), if there are multiple options available, then perform
+ a comparative study of the most significant features among the options
+ to evaluate the merits and demerits of the various options.
+ Based on the merits and demerits of the various options, give your recommendati
+ons for design.
+\end_layout
+
+\begin_layout Section
+Industrial design
+\end_layout
+
+\begin_layout Standard
+The industrial design/product design aspects should consider the following,
+\end_layout
+
+\begin_layout Itemize
+Design mix - functional, ergonomics and aesthetics aspects of the product
+ should be discussed giving consideration to appropriateness to a given
+ application.
+\end_layout
+
+\begin_layout Itemize
+Layout - the layout of the modules and the sub-modules within an enclosure
+ or system should be discussed as determined by the following considerations,
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+user, form, ergonomics, aesthetics, interconnections, display, etc.
+\end_layout
+
+\begin_layout Itemize
+realisation issues of a particular layout
+\end_layout
+
+\begin_layout Itemize
+functional aspects like EMI, thermal, wiring etc.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Product structure - provide a discussion on the product generic structure,
+ whether it should be
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+rack and frame mounted 
+\end_layout
+
+\begin_layout Itemize
+modular cabinet
+\end_layout
+
+\begin_layout Itemize
+non-modular
+\end_layout
+
+\begin_layout Itemize
+custom 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Materials - provide a discussion on the choice of materials for the product
+\end_layout
+
+\begin_layout Itemize
+Manufacturing processes
+\end_layout
+
+\begin_layout Itemize
+Cost of the product
+\end_layout
+
+\begin_layout Section
+Target scope
+\end_layout
+
+\begin_layout Standard
+The following questions need to be addressed:
+\end_layout
+
+\begin_layout Itemize
+What is the targetted scope of the product?
+\end_layout
+
+\begin_layout Itemize
+What is the set of target specifications to design the product?
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,160 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Design}{17}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Block diagram of the \emph  {PanicButton device}\relax }}{17}}
+\newlabel{fig:block_dia}{{3.1}{17}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Module partitioning}{18}}
+\newlabel{sec:module}{{3.1}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Hardware design}{18}}
+\newlabel{sec:hardware}{{3.2}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}\emph  {PanicButton device}}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1.1}Core-module}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic of the core-module of the \emph  {PanicButton device}\relax }}{19}}
+\newlabel{fig:core_module_sch}{{3.2}{19}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1.2}Tamper detection module}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Schematic of Tamper detection module\relax }}{20}}
+\newlabel{fig:tamperingproofsytem_sch}{{3.3}{20}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1.3}Panic button \& LED drive module}{20}}
+\newlabel{fig:p_button_a}{{3.4a}{21}}
+\newlabel{sub@fig:p_button_a}{{a}{21}}
+\newlabel{fig:p_button_b}{{3.4b}{21}}
+\newlabel{sub@fig:p_button_b}{{b}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Schematic of (a) LED driver (b) Panic button\relax }}{21}}
+\newlabel{fig:pbutton_sch}{{3.4}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1.4}GPS module}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Schematic of GPS module\relax }}{22}}
+\newlabel{fig:gps_sch}{{3.5}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1.5}Bluetooth low energy module}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Schematic of Bluetooth low energy module\relax }}{23}}
+\newlabel{fig:ble_sch}{{3.6}{23}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1.6}Speaker module}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Schematic of speaker amplifier module schematic\relax }}{24}}
+\newlabel{fig:speaker_amp_sch}{{3.7}{24}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1.7}Microphone module}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Schematic for microphone module\relax }}{24}}
+\newlabel{fig:audio_trigger_sch}{{3.8}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Back-end server}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Smartphone}{25}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Software design}{25}}
+\newlabel{sec:software}{{3.3}{25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}System validation module}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Flow chart for BLE system validation module\relax }}{27}}
+\newlabel{fig:ble_validation}{{3.9}{27}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces UUIDs of the BLE services\relax }}{27}}
+\newlabel{tab:Ids}{{I}{27}}
+\newlabel{fig:android_safe}{{3.10a}{28}}
+\newlabel{sub@fig:android_safe}{{a}{28}}
+\newlabel{fig:android_caution}{{3.10b}{28}}
+\newlabel{sub@fig:android_caution}{{b}{28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Screenshots of Android app\relax }}{28}}
+\newlabel{fig:android_screenshot}{{3.10}{28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Data flow for merging the connectionId and panicButtonID\relax }}{29}}
+\newlabel{fig:merged_id}{{3.11}{29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Overview of server running in the cloud\relax }}{29}}
+\newlabel{fig:server}{{3.12}{29}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.1}Microphone validation}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Microphone validation procedure\relax }}{31}}
+\newlabel{fig:mic_validation}{{3.13}{31}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces Waveform of pulse single tone audio data (a) code sent via speaker (10100101) (b) sine wave of frequency 19000kHz\relax }}{31}}
+\newlabel{fig:waveform}{{3.14}{31}}
+\@writefile{toc}{\contentsline {paragraph}{Validation sequence\\}{32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces Flow chart of microphone validation procedure\relax }}{33}}
+\newlabel{fig:mic_validation_flowchart}{{3.15}{33}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.2}Panic Button validation}{34}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces Flow chart of Panic Button Validation\relax }}{34}}
+\newlabel{fig:panic_button_validation}{{3.16}{34}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.3}Firmware validation}{34}}
+\citation{tea_paper}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.4}Tamper detection}{35}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces Flow chart of tamper detection module\relax }}{35}}
+\newlabel{fig:tamper_proof}{{3.17}{35}}
+\@writefile{toc}{\contentsline {paragraph}{Encryption Algorithm\\}{35}}
+\citation{vorbis_site}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces The pseudo code for the TEA encryption algorithm\relax }}{36}}
+\newlabel{fig:msp_encryption}{{3.18}{36}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Audio streaming module}{36}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces Data flow in streaming of audio data\relax }}{37}}
+\newlabel{fig:vorbis_stream}{{3.19}{37}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Global positioning system module}{37}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Panic button module}{37}}
+\citation{debounce_paper}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces Deboncing technique(a) Combination of pin interrupt and timer to reduce latency. (b) Only using timer interrupt.\relax }}{38}}
+\newlabel{fig:pin_interrupt}{{3.20}{38}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.5}Audio-based trigger module}{38}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.5.1}Feature Extraction}{38}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces Feature extraction process\relax }}{39}}
+\newlabel{fig:Featureextraction}{{3.21}{39}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.5.2}Training of SVM}{39}}
+\@writefile{toc}{\contentsline {paragraph}{Training-\\}{39}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.22}{\ignorespaces Training process of the SVM\relax }}{40}}
+\newlabel{fig:train}{{3.22}{40}}
+\citation{paper10}
+\@writefile{toc}{\contentsline {paragraph}{Data set-\\}{41}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces IUEC Data set details\relax }}{41}}
+\newlabel{tab:quandata}{{II}{41}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Details of data collected from panic button prototype\relax }}{42}}
+\newlabel{tab:quandata2}{{III}{42}}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Composite Data set details\relax }}{42}}
+\newlabel{tab:quandata3}{{IV}{42}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.5.3}Finding C and gamma}{43}}
+\newlabel{sssec:FindCandgamma}{{3.3.5.3}{43}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.23}{\ignorespaces Cross-validation process for obtaining optimum C and gamma\relax }}{44}}
+\newlabel{fig:CVflowchart}{{3.23}{44}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.24}{\ignorespaces F1 score obtained from grid search for C and gamma on CV set\relax }}{46}}
+\newlabel{fig:f1score}{{3.24}{46}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.5.4}Performance of the SVM}{46}}
+\newlabel{sssec:performanceSVM}{{3.3.5.4}{46}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Industrial design}{46}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Module design}{46}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1.1}Design of top panel}{47}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.25}{\ignorespaces Top view of the top panel of the \emph  {PanicButton device}\relax }}{47}}
+\newlabel{fig:toptop}{{3.25}{47}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.26}{\ignorespaces Bottom view of the top panel of the \emph  {PanicButton device}\relax }}{48}}
+\newlabel{fig:bottomtop}{{3.26}{48}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1.2}Design of panic button}{48}}
+\newlabel{sssec:designemergency}{{3.4.1.2}{48}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1.3}Design for the tamper detection circuit}{49}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.27}{\ignorespaces The projection to mount the tamper detection switch\relax }}{49}}
+\newlabel{fig:tamper_detection_switch}{{3.27}{49}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1.4}Design of the base}{49}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Putting modules together}{49}}
+\newlabel{sec:desIndust}{{3.4.2}{49}}
+\newlabel{fig:des_top_view}{{3.28a}{50}}
+\newlabel{sub@fig:des_top_view}{{a}{50}}
+\newlabel{fig:des_side_view}{{3.28b}{50}}
+\newlabel{sub@fig:des_side_view}{{b}{50}}
+\newlabel{fig:des_side_view2}{{3.28c}{50}}
+\newlabel{sub@fig:des_side_view2}{{c}{50}}
+\newlabel{fig:des_iso_view}{{3.28d}{50}}
+\newlabel{sub@fig:des_iso_view}{{d}{50}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.28}{\ignorespaces Top, side, front and isometric views of the enclosure\relax }}{50}}
+\newlabel{fig:des_views}{{3.28}{50}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.29}{\ignorespaces Exploded views of the enclosure\relax }}{51}}
+\newlabel{fig:exploded_views}{{3.29}{51}}
+\@setckpt{chap/design}{
+\setcounter{page}{52}
+\setcounter{equation}{0}
+\setcounter{enumi}{7}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{3}
+\setcounter{section}{4}
+\setcounter{subsection}{2}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{29}
+\setcounter{table}{4}
+\setcounter{cp@cntr}{0}
+\setcounter{parentequation}{0}
+\setcounter{float@type}{4}
+\setcounter{ContinuedFloat}{0}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{AM@survey}{0}
+}

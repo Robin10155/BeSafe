@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3424a325-3fc5-4cad-9f1b-d9d2e0ee4f5e" name="Besafe PI" url="http://10.32.33.209">
+        <fileTransfer host="10.32.33.209" port="22" rootFolder="/home/pi" accessType="SFTP" username="pi">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

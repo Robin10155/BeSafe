@@ -1,0 +1,7 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[edthesis]{edthesis}
+
+# Read the definittions from book.layout
+Input book.layout
+
+

@@ -1,0 +1,46 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  publogo.sty
+%  Defines the command \publogo to print the DESEpub logo of required
+%  size.
+% usage: \documentstyle[....,publogo,...]{...}
+%    \publogo{1000} for approx 3cm by 3cm logo
+%    \publogo{2000} 6cm by 6cm and so on.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Dummy command to terminate rasterplot macro arguments
+\def\log@consume#1,{}
+
+\newlength{\log@xunitlength}
+\newlength{\log@yunitlength}
+
+\def\linepl@t#1,#2:#3;#4,{
+	{\@killglue\raise#2\log@yunitlength\hbox to \z@{\kern #1\log@xunitlength
+	\rule{#3\log@xunitlength}{\log@yunitlength}\hss}
+	\ignorespaces}
+	\if #4e% End of raster points reached
+		%\typeout{#1 #2 #3 #4 :end reached}
+		\let\next=\log@consume
+	\else
+		%\typeout{#1 #2 #3 #4 :continuing}
+		\let\next=\linepl@t
+	\fi
+	\next #4,
+	}
+
+\def\publogo#1{
+% Unitlengths along x and y axes were different for the digitizer
+\log@xunitlength = 0.0003pt % scan resolution / 1000
+\log@yunitlength = 0.00032pt % scan resolution / 1000
+\multiply \log@xunitlength by #1
+\multiply \log@yunitlength by #1
+\unitlength \log@xunitlength
+\typeout{Typesetting DESEpub Logo ...}
+
+
+\begin{picture}(470,430)
+\centering
+\includegraphics[scale=0.6]{publogo.png}
+\end{picture}
+\typeout{ ... done}
+}
+

@@ -1,0 +1,202 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass desethesis
+\begin_preamble
+
+\end_preamble
+\use_default_options false
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Engineering and fabrication
+\end_layout
+
+\begin_layout Standard
+This chapter includes all the engineering and fabrication details needed
+ to develop the product.
+ 
+\end_layout
+
+\begin_layout Section
+Product structure
+\end_layout
+
+\begin_layout Standard
+This section provides the overall structure of the product in a top-down
+ manner as viewed by a person when opening up the product completely to
+ its component parts.
+ The overall structure is given with the help of a block diagram schematic.
+ On some modules, embedded software may reside and its structure diagram
+ can be shown separately module-wise.
+ The structure diagram for any standalone software should also be included.
+\end_layout
+
+\begin_layout Section
+Hardware modules
+\end_layout
+
+\begin_layout Standard
+For every hardware module, the following engineering and fabrication details
+ should be included,
+\end_layout
+
+\begin_layout Itemize
+physical dimensions with mounting hole details
+\end_layout
+
+\begin_layout Itemize
+connectors and connector pin details with pin-level labeling
+\end_layout
+
+\begin_layout Itemize
+circuit diagram using connector pin-level labeling as inputs and outputs
+\end_layout
+
+\begin_layout Itemize
+printed circuit board layout with circuit and connectors
+\end_layout
+
+\begin_layout Itemize
+routing details
+\end_layout
+
+\begin_layout Itemize
+drilling details
+\end_layout
+
+\begin_layout Itemize
+assembly and mounting details
+\end_layout
+
+\begin_layout Itemize
+bill of materials with cost
+\end_layout
+
+\begin_layout Itemize
+vendor details
+\end_layout
+
+\begin_layout Itemize
+development setup details: schematic editor, layout editor etc.
+ , assembly requirements, software for writing embedded software if any,
+ debugging tools, JTAG tools, power supply requirements, monitoring requirements
+ like CRO and multimeters etc.
+\end_layout
+
+\begin_layout Itemize
+Testing procedure for validating the module
+\end_layout
+
+\begin_layout Standard
+NOTE: include sections for every hardware molude and include the details
+ as indicated above.
+\end_layout
+
+\begin_layout Section
+Software modules
+\end_layout
+
+\begin_layout Standard
+For every software module, include the following,
+\end_layout
+
+\begin_layout Itemize
+development setup details: debugger, tools, interconnection to PC, power
+ supply etc.
+\end_layout
+
+\begin_layout Itemize
+pseudocode of algorithm
+\end_layout
+
+\begin_layout Itemize
+subroutine or function code listing (include line by line comments in code
+ for easy comprehension of the code)
+\end_layout
+
+\begin_layout Itemize
+compilation details: make file etc.
+\end_layout
+
+\begin_layout Itemize
+software embedding details if any
+\end_layout
+
+\begin_layout Itemize
+testing procedure for validating the module
+\end_layout
+
+\begin_layout Section
+System integration
+\end_layout
+
+\begin_layout Standard
+This section should include 
+\end_layout
+
+\begin_layout Itemize
+inter module hardware interconnection details
+\end_layout
+
+\begin_layout Itemize
+inter module software interconnections
+\end_layout
+
+\begin_layout Itemize
+interconnections between the system and external environment like inputs
+ and outputs (sources and sinks)
+\end_layout
+
+\begin_layout Itemize
+system level testing procedure for validating the system experimentally
+\end_layout
+
+\begin_layout Itemize
+figures obtained from CRO and/or other instruments
+\end_layout
+
+\begin_layout Itemize
+demonstration setup and the procedures for validating the system with target
+ specifications
+\end_layout
+
+\end_body
+\end_document

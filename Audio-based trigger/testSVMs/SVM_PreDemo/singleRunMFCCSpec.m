@@ -1,0 +1,32 @@
+clear;
+addpath('/home/jayraj/octaveScripts/')
+addpath('/home/jayraj/octaveScripts/audioAnalysisLibraryCode/library/');
+addpath('/home/jayraj/octaveScripts/libsvm-3.17/matlab/');
+load('/home/jayraj/octaveScripts/testSVM/Mel_plus_spec_FeatureSet/smalldataset/trainMFCC_and_specFeatureSet.mat');
+display(size(melFeatures));
+fflush(stdout);
+Labels = melFeatures(:,43);
+featureIdx = [2:13 [2:13]+13 27:42];
+melFeatures = melFeatures(:,featureIdx);
+
+log2c = 15;
+log2g = -18;
+str = ['-c ', num2str(2^log2c), ' -g ', num2str(2^log2g), ' -q'];
+
+model = svmtrain(Labels,melFeatures,str);
+save -V6 model15_-18.mat 'model';
+
+#feature(1);
+#load('testingMFCCAndSpecFeatures.mat');
+#display(size(testFeatures));
+#testFeatures = testFeatures(:,featureIdx);
+#narrowedMatlabData = testFeatures;
+#save -V6 matlabData.mat 'narrowedMatlabData';
+#display(size(testFeatures));
+#fflush(stdout);
+
+#testLabels = -1*ones(size(testFeatures,1),1);
+
+#[predicted_labels, accuracy, prob_estimates] = svmpredict(testLabels,testFeatures,model);
+#result_stage1 = [testLabels, predicted_labels, prob_estimates];
+#disp(result_stage1);

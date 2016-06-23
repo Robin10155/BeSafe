@@ -1,0 +1,90 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{desearticle}[2010/08/15 DESE Articles for DESE Publications]
+% Revision History
+%   18-01-2013 : DESE Article class
+
+    \renewcommand{\normalsize}{\fontsize{12pt}{13pt}\rmfamily\selectfont}
+
+%Define variables
+    \newcommand{\Author}[1]{\gdef\edField@Author{#1}}
+    \newcommand{\Afil}[1]{\gdef\edField@Afil{#1}}
+    \newcommand{\Journal}[1]{\gdef\edField@Journal{#1}}
+    \newcommand{\Month}[1]{\gdef\edField@Month{#1}}
+    \newcommand{\Year}[1]{\gdef\edField@Year{#1}}
+%Initialise variables
+    \Author{[Author Name]}
+    \Afil{DESE, Indian Institute of Science, Bangalore-560012}
+    \Journal{PES}
+    \Month{[Month]}
+    \Year{[Year]}
+% Define the macro for making preliminary pages
+    \newcommand{\makepreliminarypages}{
+        \changepage{0.5in}{}{}{}{}{}{-0.2in}{-0.3in}{}
+        \renewcommand{\clearemptydoublepage}{\cle@remptydoublep@ge}
+        \changepage{-0.5in}{}{}{}{}{}{0.2in}{0.3in}{}
+    }
+% A couple of useful macros for students
+
+    % The \singlespace macro switches to single spaced lines
+    \newcommand{\singlespace}{\par\renewcommand{\baselinestretch}{1}\small\normalsize\par}
+
+    % The \doublespace macro switches to double spaced lines
+    \newcommand{\doublespace}{\par\renewcommand{\baselinestretch}{1.3}\small\normalsize\par}
+
+% A command to handle single sided preliminary pages in a double sided environment
+
+    % Define the '\clearemptydoublepage' command to clear pages but not number any blank pages inserted.
+    \let\cle@rdoublep@ge\cleardoublepage
+    \newcommand{\cle@remptydoublep@ge}{
+      \clearpage
+      \if@twoside
+      \ifodd\c@page\else
+      \fi\fi
+      {\pagestyle{empty}\cle@rdoublep@ge}}
+    \newcommand{\clearemptydoublepage}{\cle@remptydoublep@ge}
+
+%packages
+    \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+    \ProcessOptions
+    \relax
+    \LoadClass[a4paper,10pt]{article}
+
+    \RequirePackage{changepage}
+    \RequirePackage[a4paper,left=0.75in,right=0.75in]{geometry}
+    \RequirePackage[pdftex]{graphicx}
+    \RequirePackage{amsmath}
+    \RequirePackage{amssymb}
+    \RequirePackage{amsthm}
+    \RequirePackage{multirow}
+    \RequirePackage{multicol}
+    \RequirePackage[normalem]{ulem}		
+    \RequirePackage[section]{placeins}
+    \RequirePackage{fancyhdr}
+    \RequirePackage{lastpage}
+    \RequirePackage{makeidx}
+    \RequirePackage{publogo}
+    \makeindex
+
+%layout
+    %\setlength{\textwidth}{6.2in}
+    \setlength{\textheight}{9in}
+    \setlength\headheight{20pt}
+    \setlength{\headsep}{10pt}
+    \setlength\parindent{0in}
+    \setlength\parskip{6pt}
+    \raggedbottom
+
+%Headers and footers
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.5pt}
+\lhead{\publogo{10} \hspace{50pt}\footnotesize\sc \edField@Journal}
+\rhead{\scriptsize\copyright DESE-PES-\edField@Month-\edField@Year}
+%\fancyhead[RE,LO]{\thepage}
+\renewcommand{\footrulewidth}{0.5pt}
+\lfoot{\footnotesize\sc \edField@Author , \edField@Afil }
+\cfoot{}
+\rfoot{\thepage\ of \pageref{LastPage}}
+
+
+
+ 

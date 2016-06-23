@@ -1,0 +1,79 @@
+\subsection{Audio-based trigger module}
+This audio-based trigger comes under \emph{sound event detection} domain of relatively broad research area of audio/sound analysis. Sound event detection is relatively new area compared to speech analysis, so most of the literature in the field of acoustic analysis is highly clustered around speech analysis. In section~\ref{sssec:featforscream}, we take a look at literature survey and experiments done to come up with required feature for scream detection; in section~\ref{sssec:algoforscream}, we take a look at literature survey done for algorithm to be used for scream detection.
+
+\subsubsection{Feature for scream detection}
+\label{sssec:featforscream}
+Features extracted from acoustic signals are vectors that can faithfully represent them. In order to develop the best possible classification algorithm for reliable detection and classification of sound events, it is very important to select the feature set carefully. Although a large feature set has its benefits of generating accurate results, using a small feature set can reduce latency and make the design simpler.
+
+Over the last few years, several audio feature extraction techniques have been introduced. They make use of one of the following two signal representation domains: temporal
+and spectral. Temporal domain features such as signal energy, pitch, zero-crossing \cite{paper4} rate and entropy modulation \cite{paper5} have been used for speech classification but are not enough to represent the non-stationary characteristics of sound events. Spectral features such as percentage of low energy frames, 4-Hz modulation energy, spectral roll-off point, mean frequency, spectral centroid, mel-frequency cepstral coefficients and frequency slopes are useful in audio classification, but they do not provide any information about the temporal evolution of the extracted features over the frame.
+
+Initially researchers used popular mel-frequency cepstral coefficients (MFCC) as features for sound event detection. MFCC are short-term spectral based features. These features are extracted through a series of digital signal processing steps like windowing, Discrete Fourier Transform(DFT), logarithm and Discrete Cosine Transform (DCT). MFCC are still used for non-verbal sound recognition \cite{paper6}. A paper\cite{paper7} proposed a sound event classifier which use MFCC feature set; they achieved 74\% accuracy. Another paper \cite{paper8} successfully classified acoustic environmental sounds like office, soccer match, beach, laundrette, street noise, rail station, car, bar and bus using a Hidden Markov Model(HMM) based classifier which used MFCC as feature vectors.
+
+%TODO ref for LPC
+Linear predictive coefficients (LPC) is another well known feature set used for sound
+classification of car noise, factory noise, street noise, babble and bus noise. A Quadratic
+Gaussian classifier using LPC feature set gives accuracy of 90\% for car/factory noise
+and 60-80\% for the rest.
+
+Time-Frequency Matrix(TFM) feature set tends to capture non-stationary and discontinuous properties of sound events. This matrix is obtained using matching-pursuit time-frequency distribution (MP-TFD) technique, followed by non-negative matrix decomposition to decompose the TFM into its significant components \cite{paper9}.
+
+After looking at individual feature sets, researchers started fusion of various feature sets. \cite{paper6} used MFCC along with Pitch range based features, \cite{paper10} used MFCC along with spectral features like centroid, flux, flatness, roll-off, harmonic-to-noise ratio and pitch. TFM when combined with a few spectral and MFCC features, gives 10\% accuracy-rate improvement compared to only MFCC features based classifiers \cite{paper9}.
+
+One paper \cite{paper11} went in completely different direction to tackle the issue of sound event classification, they argued that sound events produced a unique texture, which can be visualized using a spectrogram image and could be analyzed for automatic sound event detection. Another paper \cite{paper12} used pseudo-coloration to enhance the perception. Spectrogram is first normalized into grey-scale with a fixed range, then dynamic range is quantized in to regions, each of which is then mapped to form a monochrome image. Finally monochrome images are partitioned in to blocks and distribution statistics in each block are extracted to form the feature set. Robustness of spectrogram based methods comes from the fact that noise
+is normally more diffused than the signal and therefore the effect of noise is limited to a
+particular quantization region, leaving other regions less effected.
+
+Feature used in detection/classification systems impacts their response time and power
+consumption. A non-realtime application can make use of large and time consuming feature sets to get highly accurate results, while a realtime application can only use feature
+set that fit into its time budget. Power consumption is important aspect in battery powered devices; Feature set that can give acceptable accuracy at lesser computation results in system that lasts longer on a single charge.
+
+We decided to use MFCC along with spectral features like centroid, flux, flatness, roll-off, harmonics-to-noise ratio and pitch due to its promising performance \cite{paper10}. We conducted an experiment to find out the execution time of this feature set. The task of detecting scream is to be performed in real-time. In our project we decided to analyze live audio stream every 1 second, which gives us 2 second to analyze and give results for audio received in previous second, this decision was based on the analysis done by \cite{paper10}, which showed average scream duration to be around 2 second. We tried MFCC plus few spectral features as feature vector and computed feature extraction time for an audio clip of 2 second, Table~\ref{tab:scr2} summarizes scream detection time on two hardwares.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{ |c|c| } 
+ \hline
+ \textbf{Platform} & \textbf{Feature extraction time (in s)} \\
+ \hline 
+ \hline
+ Raspberry pi 3 & 13 \\
+ \hline
+ Intel quad core i5-4440 @ 3.10GHz (16 GB) & 1.5 to 2 \\ 
+ \hline
+\end{tabular}
+\end{center}
+\caption{Feature extraction time using MFCC and spectral feature as feature vector} \label{tab:scr2}
+\end{table}
+
+With MFCC and spectral features as feature set, we had latency of 13 sec which is beyond the 2 sec limit. We had to shed computationally expensive part of this composite dataset to squeeze into the budget of 2 sec, we decided to use only MFCC as feature vector and Table~\ref{tab:scr1} summarizes the execution time of this dataset.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{ |c|c| } 
+ \hline
+ \textbf{Platform} & \textbf{Feature extraction time (in s)} \\
+ \hline 
+ \hline
+ Raspberry pi 3 & 1.480 \\
+ \hline
+ Intel quad core i5-4440 @ 3.10GHz (16 GB) & 1.020 to 1.050 \\ 
+ \hline
+\end{tabular}
+\end{center}
+\caption{Feature extraction time using MFCC as feature vector} \label{tab:scr1}
+\end{table}
+
+With MFCC as feature vector we have latency of 1.480 sec, which is less than our time limit of 2 sec. We decided to go with MFCC as the feature vector for scream detection.
+
+\subsubsection{Classification algorithm for scream detection}
+\label{sssec:algoforscream} 
+
+These algorithms take features as input and output probabilities of all classification class for the given input. The class with highest probability for a given input is said to be the class of the input.
+
+Initially researchers used classifiers like a quadratic Gaussian classifier, a least-square
+linear classifier, a neighbor classifier and a decision tree classifier \cite{paper6}. These classifiers could preform well for particular sound events but couldn't generalize well to non-verbal sound events.
+
+Lately researches have started using machine learning for the purpose of sound event classification. Algorithms like Artificial Neural Network (ANN) \cite{paper6} and Support Vector Machine(SVM) \cite{paper10} are being used widely. These algorithms fall under the category of supervised machine learning. These algorithms outperform nearly all other classifiers used in past due to their capability to model complex systems.
+
+ANNs are mathematical models that emulates biology of a human brain. ANNs are parallel computing mechanisms that contains neurons laid out as a layers, interconnects and learning rules. SVMs are another set of mathematical models used for classification. SVMs constructs a hyperplane or set of hyperplanes in a high dimensional space, which is used for classification. ANN algorithms require more data to train the classifier as compared to SVMs. In case of SVMs, we need to set a limited number of parameters and choose among possible kernel. We decided to use SVM algorithm due to available limited dataset and easy convergence in training. 

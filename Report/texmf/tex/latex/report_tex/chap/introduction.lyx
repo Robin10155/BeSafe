@@ -1,0 +1,378 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass desethesis
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Introduction
+\end_layout
+
+\begin_layout Standard
+This chapter introduces the product to the reader and is called the 
+\emph on
+product brief
+\emph default
+.
+ It contains the following sections.
+ The questions raised in the following sections are representative of a
+ generic product.
+ These questions need to be addressed through the contents written in this
+ chapter.
+ It should be noted that the questions are not exhaustive.
+ If however, you feel that the questions do not address a specific need
+ for your product, then do not hesitate to address them too.
+\end_layout
+
+\begin_layout Section
+Background
+\end_layout
+
+\begin_layout Standard
+Give the motivation and need with figures and block diagrams to explain
+ your project.
+\end_layout
+
+\begin_layout Section
+Functional aspects
+\end_layout
+
+\begin_layout Standard
+The following questions need to be addressed:
+\end_layout
+
+\begin_layout Itemize
+What is the primary function of the proposed product?
+\end_layout
+
+\begin_layout Itemize
+What are the secondary functions if any?
+\end_layout
+
+\begin_layout Itemize
+Does a similar product exsit in the market?
+\end_layout
+
+\begin_layout Itemize
+Does the product form a part of a bigger system or should it work in conjuction
+ with other equipments?
+\end_layout
+
+\begin_layout Itemize
+Are there any standards or protocols that need to be followed?
+\end_layout
+
+\begin_layout Section
+Characteristics and performance
+\end_layout
+
+\begin_layout Standard
+The following questions need to be addressed:
+\end_layout
+
+\begin_layout Itemize
+What are the parameters to be measured, monitored and controlled by the
+ product or product system?
+\end_layout
+
+\begin_layout Itemize
+What are the performance requirements that is expected of the product?
+\end_layout
+
+\begin_layout Itemize
+Are there any absolute maximum ratings on any of the input or output parameters?
+\end_layout
+
+\begin_layout Itemize
+Which are the variables that are likely to influence the performance of
+ the product?
+\end_layout
+
+\begin_layout Itemize
+Are there any special considerations about the input and/or output signals?
+\end_layout
+
+\begin_layout Section
+User aspects
+\end_layout
+
+\begin_layout Standard
+The following questions need to be addressed:
+\end_layout
+
+\begin_layout Itemize
+What is the technical competence of the user?
+\end_layout
+
+\begin_layout Itemize
+Is there any constant user-product interaction required?
+\end_layout
+
+\begin_layout Itemize
+What are the ergonomical constraints brought in by the usage pattern?
+\end_layout
+
+\begin_layout Itemize
+Is the product operated continuously or intermittently?
+\end_layout
+
+\begin_layout Itemize
+What will be the specific documentation of the product that is required
+ by the user?
+\end_layout
+
+\begin_layout Itemize
+Is the user required to perform installation and maintenance?
+\end_layout
+
+\begin_layout Section
+Environment aspects
+\end_layout
+
+\begin_layout Standard
+The following questions need to be addressed:
+\end_layout
+
+\begin_layout Itemize
+How do you classify the application of the product from the environmental
+ point of view? (
+\emph on
+Refer to MIL-STD for environmental classifications on the web
+\emph default
+)
+\end_layout
+
+\begin_layout Itemize
+What is the ambient temperature range in the neighbourhood of the product?
+\end_layout
+
+\begin_layout Itemize
+Do humidity, vibration and pressure affect the operation and design of the
+ product?
+\end_layout
+
+\begin_layout Itemize
+What other environmental parameters have significant impact on the product
+ operation?
+\end_layout
+
+\begin_layout Section
+Power supply
+\end_layout
+
+\begin_layout Standard
+The following questions need to be addressed:
+\end_layout
+
+\begin_layout Itemize
+Is the product battery operated?
+\end_layout
+
+\begin_layout Itemize
+What will be the effect of a power breakdown on the product or the associated
+ system?
+\end_layout
+
+\begin_layout Itemize
+Are there special considerations or limitations on the power consumption
+ of the product?
+\end_layout
+
+\begin_layout Section
+Safety
+\end_layout
+
+\begin_layout Standard
+The following questions need to be addressed:
+\end_layout
+
+\begin_layout Itemize
+In case of supply voltages upto 270V with respect to earth, what is the
+ nature of the location in which the equipment is to be installed?
+\end_layout
+
+\begin_layout Itemize
+What is the class of the product from the point of view of the safety standards?
+ (
+\emph on
+refer to web
+\emph default
+)
+\end_layout
+
+\begin_layout Section
+Reliability
+\end_layout
+
+\begin_layout Standard
+The following questions need to be addressed:
+\end_layout
+
+\begin_layout Itemize
+What is the warranty/gaurantee conditions that will be proposed for your
+ product?
+\end_layout
+
+\begin_layout Itemize
+What is the targeted reliability figure in terms of MTTF(mean time to failure)?
+\end_layout
+
+\begin_layout Itemize
+What is the proposed service infrastructure for the product?
+\end_layout
+
+\begin_layout Itemize
+What should be the operational downtime to uptime ratio for the product?
+\end_layout
+
+\begin_layout Itemize
+What is the targeted maintainability figure in terms of MTTR(mean time to
+ repair)?
+\end_layout
+
+\begin_layout Section
+Literature Survey
+\end_layout
+
+\begin_layout Standard
+The following questions need to be addressed:
+\end_layout
+
+\begin_layout Itemize
+What is the existing status of technology or algorithms in relation to the
+ product/project?
+\end_layout
+
+\begin_layout Itemize
+What are the gaps the proposed product/project addresses?
+\end_layout
+
+\begin_layout Section
+Product/market Survey
+\end_layout
+
+\begin_layout Standard
+The following questions need to be addressed:
+\end_layout
+
+\begin_layout Itemize
+Are there similar products in the market?
+\end_layout
+
+\begin_layout Itemize
+What are its 
+\emph on
+features
+\emph default
+? (Prepare a comparison table of 
+\emph on
+features
+\emph default
+ in relation to the proposed product/project)
+\end_layout
+
+\begin_layout Section
+User Survey
+\end_layout
+
+\begin_layout Standard
+The following questions need to be addressed:
+\end_layout
+
+\begin_layout Itemize
+Who are the users of the product?
+\end_layout
+
+\begin_layout Itemize
+Are the users technical or non-technical people?
+\end_layout
+
+\begin_layout Itemize
+What are their opinions on the features of the proposed product?
+\end_layout
+
+\begin_layout Itemize
+What are the features that are desirable in their opinion, but are not possible
+ to implement in your opinion?
+\end_layout
+
+\begin_layout Section
+Wish scope
+\end_layout
+
+\begin_layout Standard
+The following questions need to be addressed:
+\end_layout
+
+\begin_layout Itemize
+What is the scope of the product that you wish to undertake?
+\end_layout
+
+\begin_layout Itemize
+What is the set of dream/wish specifications that you consider would be
+ ideal for your product?
+\end_layout
+
+\begin_layout Itemize
+Prepare a comparison table of the specifications of similar existing products
+ in relation to the proposed product/project
+\end_layout
+
+\end_body
+\end_document

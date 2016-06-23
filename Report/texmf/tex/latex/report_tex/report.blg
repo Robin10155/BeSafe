@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: report.aux
+A level-1 auxiliary file: chap/synopsis.aux
+A level-1 auxiliary file: chap/acknowledgement.aux
+A level-1 auxiliary file: chap/notations.aux
+A level-1 auxiliary file: chap/introduction.aux
+A level-1 auxiliary file: chap/study.aux
+A level-1 auxiliary file: chap/design.aux
+A level-1 auxiliary file: chap/engineering.aux
+A level-1 auxiliary file: chap/concluding_remarks.aux
+A level-1 auxiliary file: chap/imp_data.aux
+A level-1 auxiliary file: chap/programlist.aux
+A level-1 auxiliary file: chap/contributions.aux
+The style file: unsrt.bst
+Illegal, another \bibstyle command---line 20 of file report.aux
+ : \bibstyle
+ :          {unsrt}
+I'm skipping whatever remains of this command
+Database file #1: report.bib
+Warning--can't use both volume and number fields in umarikar2005msm
+You've used 2 entries,
+            1791 wiz_defined-function locations,
+            467 strings with 3987 characters,
+and the built_in function-call counts, 520 in all, are:
+= -- 45
+> -- 16
+< -- 2
++ -- 6
+- -- 4
+* -- 28
+:= -- 76
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 29
+empty$ -- 55
+format.name$ -- 4
+if$ -- 122
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 3
+newline$ -- 13
+num.names$ -- 2
+pop$ -- 11
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 18
+stack$ -- 0
+substring$ -- 24
+swap$ -- 12
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 5
+width$ -- 3
+write$ -- 24
+(There was 1 error message)

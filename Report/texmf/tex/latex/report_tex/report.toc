@@ -1,0 +1,87 @@
+\select@language {english}
+\contentsline {chapter}{Table of Contents}{xi}
+\contentsline {chapter}{List of Figures}{xv}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Background}{1}
+\contentsline {section}{\numberline {1.2}Functional aspects}{2}
+\contentsline {section}{\numberline {1.3}User interfaces and communication channels}{3}
+\contentsline {section}{\numberline {1.4}Power supply}{4}
+\contentsline {section}{\numberline {1.5}Product/market Survey}{4}
+\contentsline {section}{\numberline {1.6}Wish scope}{5}
+\contentsline {chapter}{\numberline {2}Study}{7}
+\contentsline {section}{\numberline {2.1}Functional concept}{7}
+\contentsline {section}{\numberline {2.2}Module study}{9}
+\contentsline {subsection}{\numberline {2.2.1}Protocols for communication}{9}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Protocol for messaging between the \emph {PanicButton device}, the back-end server and PCRs}{9}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Protocol for audio streaming}{10}
+\contentsline {subsection}{\numberline {2.2.2}Compression algorithm}{11}
+\contentsline {subsection}{\numberline {2.2.3}Encryption algorithm}{11}
+\contentsline {subsection}{\numberline {2.2.4}Audio-based trigger module}{12}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Feature for scream detection}{12}
+\contentsline {subsubsection}{\numberline {2.2.4.2}Classification algorithm for scream detection}{14}
+\contentsline {section}{\numberline {2.3}Industrial design}{15}
+\contentsline {chapter}{\numberline {3}Design}{17}
+\contentsline {section}{\numberline {3.1}Module partitioning}{18}
+\contentsline {section}{\numberline {3.2}Hardware design}{18}
+\contentsline {subsection}{\numberline {3.2.1}\emph {PanicButton device}}{18}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Core-module}{18}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Tamper detection module}{19}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Panic button \& LED drive module}{20}
+\contentsline {subsubsection}{\numberline {3.2.1.4}GPS module}{21}
+\contentsline {subsubsection}{\numberline {3.2.1.5}Bluetooth low energy module}{22}
+\contentsline {subsubsection}{\numberline {3.2.1.6}Speaker module}{23}
+\contentsline {subsubsection}{\numberline {3.2.1.7}Microphone module}{24}
+\contentsline {subsection}{\numberline {3.2.2}Back-end server}{24}
+\contentsline {subsection}{\numberline {3.2.3}Smartphone}{25}
+\contentsline {section}{\numberline {3.3}Software design}{25}
+\contentsline {subsection}{\numberline {3.3.1}System validation module}{25}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Microphone validation}{30}
+\contentsline {paragraph}{Validation sequence\\}{32}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Panic Button validation}{34}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Firmware validation}{34}
+\contentsline {subsubsection}{\numberline {3.3.1.4}Tamper detection}{35}
+\contentsline {paragraph}{Encryption Algorithm\\}{35}
+\contentsline {subsection}{\numberline {3.3.2}Audio streaming module}{36}
+\contentsline {subsection}{\numberline {3.3.3}Global positioning system module}{37}
+\contentsline {subsection}{\numberline {3.3.4}Panic button module}{37}
+\contentsline {subsection}{\numberline {3.3.5}Audio-based trigger module}{38}
+\contentsline {subsubsection}{\numberline {3.3.5.1}Feature Extraction}{38}
+\contentsline {subsubsection}{\numberline {3.3.5.2}Training of SVM}{39}
+\contentsline {paragraph}{Training-\\}{39}
+\contentsline {paragraph}{Data set-\\}{41}
+\contentsline {subsubsection}{\numberline {3.3.5.3}Finding C and gamma}{43}
+\contentsline {subsubsection}{\numberline {3.3.5.4}Performance of the SVM}{46}
+\contentsline {section}{\numberline {3.4}Industrial design}{46}
+\contentsline {subsection}{\numberline {3.4.1}Module design}{46}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Design of top panel}{47}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Design of panic button}{48}
+\contentsline {subsubsection}{\numberline {3.4.1.3}Design for the tamper detection circuit}{49}
+\contentsline {subsubsection}{\numberline {3.4.1.4}Design of the base}{49}
+\contentsline {subsection}{\numberline {3.4.2}Putting modules together}{49}
+\contentsline {chapter}{\numberline {4}Engineering and fabrication}{53}
+\contentsline {section}{\numberline {4.1}Product structure}{53}
+\contentsline {section}{\numberline {4.2}Hardware modules}{54}
+\contentsline {subsection}{\numberline {4.2.1}Raspberry pi}{54}
+\contentsline {subsection}{\numberline {4.2.2}Add-on board for raspberry pi}{54}
+\contentsline {subsection}{\numberline {4.2.3}Enclosure of \emph {PanicButton device}}{56}
+\contentsline {section}{\numberline {4.3}Software modules}{59}
+\contentsline {subsection}{\numberline {4.3.1}Raspberry pi core-firmware}{59}
+\contentsline {subsection}{\numberline {4.3.2}nRF51822 firmware}{59}
+\contentsline {subsection}{\numberline {4.3.3}MSP430 firmware}{59}
+\contentsline {subsection}{\numberline {4.3.4}Scream detection firmware}{59}
+\contentsline {subsection}{\numberline {4.3.5}Server code}{60}
+\contentsline {subsubsection}{\numberline {4.3.5.1}Mosquitto application code}{60}
+\contentsline {subsubsection}{\numberline {4.3.5.2}Apache tomcat servlet code}{60}
+\contentsline {subsection}{\numberline {4.3.6}Android app}{60}
+\contentsline {section}{\numberline {4.4}Key configuration parameters}{61}
+\contentsline {section}{\numberline {4.5}System integration}{61}
+\contentsline {subsection}{\numberline {4.5.1}Internal connections}{61}
+\contentsline {subsection}{\numberline {4.5.2}External connections}{62}
+\contentsline {chapter}{\numberline {5}Concluding remarks}{63}
+\contentsline {section}{\numberline {5.1}User instructions}{63}
+\contentsline {subsection}{\numberline {5.1.1}Auto validation}{63}
+\contentsline {subsection}{\numberline {5.1.2}Manual validation}{63}
+\contentsline {subsection}{\numberline {5.1.3}Emergency request}{63}
+\contentsline {section}{\numberline {5.2}Suggestions for next gen}{64}
+\contentsline {section}{\numberline {5.3}Future scope}{64}
+\contentsline {chapter}{Bibliography}{65}

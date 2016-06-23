@@ -1,0 +1,32 @@
+%packages
+\usepackage[a4paper,top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{cedtcommands}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+%layout
+%\pdfpagewidth 8.2in
+%\pdfpageheight 11.7in
+%\setlength\topmargin{0in}
+\setlength\headheight{0.5in}
+\setlength\headsep{6pt}
+%\setlength\footskip{6pt}
+\setlength\textheight{9in}
+%\setlength\textwidth{6.2in}
+%\setlength\oddsidemargin{0in}
+%\setlength\evensidemargin{0in}
+\setlength\parindent{0in}
+\setlength\parskip{6pt}
+
+%Headers and footers
+\pagestyle{fancy}
+\rhead{CEDT}
+\lhead{Indian Institute of Science}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt} 
+
+ 

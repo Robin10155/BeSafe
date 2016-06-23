@@ -1,0 +1,101 @@
+\begin{thebibliography}{1}
+
+\bibitem{ncrbi}
+National Crime Records Bureau of India.
+\newblock{http://ncrb.nic.in}.
+
+\bibitem{safe1}
+Artemis safety wearable.
+\newblock{http://www.artemisfashion.com/}.
+
+\bibitem{safe2}
+Amulyte safety wearable.
+\newblock{http://vandrico.com/wearables/device/amulyte}.
+
+\bibitem{safe3}
+Stiletto safety wearable.
+\newblock{http://stiletto.is/}.
+
+\bibitem{safe4}
+CUFF safety wearable.
+\newblock{https://www.cuff.io/}.
+
+\bibitem{safe5}
+SAFER safety wearable.
+\newblock{https://www.leafwearables.com/}.
+
+\bibitem{safe6}
+Revolar safety wearable.
+\newblock{https://revolar.com/}.
+
+\bibitem{safe7}
+First sign safety wearable.
+\newblock{http://www.firstsign.us/}.
+
+\bibitem{paper4}
+M. Carey, E. Parris, and H. Lloyd-Thomas.
+\newblock {``A comparison of features for speech,music discrimination,"}.
+\newblock In {\em Proc. Int. Conf. Acoust., Speech,Signal Process.,}, Phoenix, AZ, volume 1,
+  pages 149--152, Mar. 1999.
+
+\bibitem{paper5}
+J. Pinquier, J.-L. Rouas, and R. A. Obrecht.
+\newblock {``Robust speech/music classification in audio documents,"}.
+\newblock In {\em Proc. Int. Conf. Spoken Lang. Process.,}, Denver, CO, volume 3, 
+  pages 2005--2008, Sep. 2002.
+
+\bibitem{paper6}
+B. D. Barkana, B. Uzkent, and I. Saricicek.
+\newblock {``Normal and Abnormal Non-Speech Ausio Event Detection Using MFCC and PR- Based Feature Sets"}.
+\newblock In {\em Adv.Mater. Res.,}, volume 601, 
+  pages 200--208, Dec. 2012.
+
+\bibitem{paper7}
+G. Tzanetakis and P. Cook.
+\newblock {``Musical genre classification of audio signals"}.
+\newblock In {\em IEEE Transection on Speech and Audio Processing,}, volume 10, 
+  July. 2002.
+
+\bibitem{paper8}
+L. Ma, B. Milner, and D. Smith.
+\newblock {``Acoustic Environment Classification"}.
+\newblock In {\em ACM Transactions on Language Processing (TSLP),}, volume 3, pages 1-22,
+  July. 2006.
+
+\bibitem{paper9}
+B. Ghoraani and S. Krishnan.
+\newblock {``Time-Frequency Matrix Feature Extraction and Classification of Environmental Audio Signals"}.
+\newblock In {\em IEEE Trans. Audio, Speech Lang.processing.,}, volume 19, pages 2197-2209,
+  2011.
+
+\bibitem{paper10}
+A. Sharma and S. Kaul,
+\newblock {``Two-Stage Supervised Learning-Based Method to Detect screams and Cries in Urban Environments"}.
+\newblock volume 24, pages 290-299, 2016.
+
+\bibitem{paper11}
+R.V Sharan and T. J. Moir,
+\newblock {``Robust audio survaillance using spectrogram image texture feature"}.
+\newblock pages 1956-1960, 2015.
+
+\bibitem{paper12}
+J. Dannis, H. D. Tran, and H. Li,
+\newblock {``Spectrogram Image Feature for Sound Event Classification in Mismatched Conditions,"}.
+\newblock In {\em IEEE Signal Process. Lett.,}, volume 18, pages 130-133, 2011.
+
+\bibitem{paper13}
+Chih-Wei Hsu, Chih-Chung Chang, and Chih-Jen Lin,
+\newblock {``A Practical Guide to Support Vector Classification"}.
+
+\bibitem{tea_paper}
+David J. Wheeler, Roger M. Needham,
+\newblock {``TEA, a Tiny Enryption Algorithm"}, Computer Laboratory, Cambridge University, England.
+
+\bibitem{vorbis_site}
+Vorbis ogg audio format
+\newblock{https://xiph.org/vorbis/}.
+
+\bibitem{debounce_paper}
+Jack G. Ganssle,
+\newblock{``A guide to debouncing"}, The Ganssle Group.
+\end{thebibliography}

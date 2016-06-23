@@ -1,0 +1,45 @@
+\select@language {english}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Chart for recorded number of crime against women\relax }}{2}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces A safe ride with our device in vehicles\relax }}{3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Functional description of the \emph {PanicButton device} with audio-based trigger in auto/cab\relax }}{8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Functional description of the \emph {PanicButton device} with audio-based trigger in bus\relax }}{8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Layout of battery and electronics at the base of the \emph {PanicButton device}\relax }}{16}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Block diagram of the \emph {PanicButton device}\relax }}{17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic of the core-module of the \emph {PanicButton device}\relax }}{19}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Schematic of Tamper detection module\relax }}{20}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Schematic of (a) LED driver (b) Panic button\relax }}{21}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Schematic of GPS module\relax }}{22}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Schematic of Bluetooth low energy module\relax }}{23}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Schematic of speaker amplifier module schematic\relax }}{24}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Schematic for microphone module\relax }}{24}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Flow chart for BLE system validation module\relax }}{27}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Screenshots of Android app\relax }}{28}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Data flow for merging the connectionId and panicButtonID\relax }}{29}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Overview of server running in the cloud\relax }}{29}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Microphone validation procedure\relax }}{31}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Waveform of pulse single tone audio data (a) code sent via speaker (10100101) (b) sine wave of frequency 19000kHz\relax }}{31}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Flow chart of microphone validation procedure\relax }}{33}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Flow chart of Panic Button Validation\relax }}{34}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Flow chart of tamper detection module\relax }}{35}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces The pseudo code for the TEA encryption algorithm\relax }}{36}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Data flow in streaming of audio data\relax }}{37}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Deboncing technique(a) Combination of pin interrupt and timer to reduce latency. (b) Only using timer interrupt.\relax }}{38}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Feature extraction process\relax }}{39}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Training process of the SVM\relax }}{40}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Cross-validation process for obtaining optimum C and gamma\relax }}{44}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces F1 score obtained from grid search for C and gamma on CV set\relax }}{46}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Top view of the top panel of the \emph {PanicButton device}\relax }}{47}
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Bottom view of the top panel of the \emph {PanicButton device}\relax }}{48}
+\contentsline {figure}{\numberline {3.27}{\ignorespaces The projection to mount the tamper detection switch\relax }}{49}
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Top, side, front and isometric views of the enclosure\relax }}{50}
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Exploded views of the enclosure\relax }}{51}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Block diagram of the \emph {PanicButton device}\relax }}{54}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Schematic of raspberry Pi add-on board\relax }}{55}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Top side and bottom side of PCB of Raspberry pi add-on board\relax }}{56}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Bill of materials\relax }}{57}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Different views of the enclosure\relax }}{58}
+\addvspace {10\p@ }
